@@ -12,6 +12,7 @@
     <div style="display: flex; justify-content: center; flex-direction: column">
       <p style="font-size: 28px; text-align: center">
         🥳축하합니다!🥳<br /><br />
+        정답은 <span id="result"></span>입니다.<br /><br />
         <span id="count"></span>번만에 맞히셨네요.<br /><br />
         게임을 종료합니다<br />
       </p>
@@ -27,6 +28,9 @@
       console.log(attemp);
       const countSpan = document.getElementById("count");
       countSpan.innerHTML = attemp;
+
+      document.getElementById("result").innerHTML =
+        localStorage.getItem("result");
     </script>
   </body>
 </html>

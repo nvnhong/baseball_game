@@ -70,6 +70,7 @@ function ballStrikeCheck() {
 
   if (strike === 3) {
     localStorage.setItem("attemp", attemp);
+    localStorage.setItem("result", answer);
     const div = document.createElement("div");
     div.textContent = `${attemp}번만에 맞히셨습니다. 게임을 종료합니다.`;
     record.append(div);
