@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <style>
+      .redBorder {
+        border-color: red;
+      }
+      .redBorder:focus {
+        border-color: red;
+        border-radius: 2px;
+        outline: none;
+      }
+    </style>
   </head>
   <body>
     <form onsubmit="return false">
       <input id="input" />
       <button id="button" onclick="ballStrikeCheck()">확인</button>
+      <div id="record"></div>
     </form>
-    <div id="record"></div>
-    <script src="check.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
